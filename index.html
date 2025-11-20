@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{SOBER}} ({{SOB}}) — Official</title>
-  <meta name="description" content="Website resmi {{SOBER}} — token on {{CHAIN}}. Contract: {{CONTRACT_ADDRESS}}">
-  <meta property="og:title" content="{{SOBER}} ({{SOB}})" />
+  <title>SOBER (SOB) — Official</title>
+  <meta name="description" content="Website resmi SOBER — token on BSC. Contract: 0xcb853ebc2972343a4b8706ebefa8e3dfd693c19e">
+  <meta property="og:title" content="SOBER (SOB)" />
   <meta property="og:description" content="Official site of {{SOBER}}. Buy on DEX, tokenomics, roadmap and socials." />
   <meta property="og:image" content="/assets/logo.png" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -23,8 +23,8 @@
     <div class="flex items-center gap-4">
       <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center"> <img id="logo" src="/assets/logo.png" alt="logo" class="w-10 h-10 object-contain"> </div>
       <div>
-        <h1 class="text-xl font-semibold">{{SOBER}} <span class="text-sm text-green-400">({{SOB}})</span></h1>
-        <p class="text-xs text-gray-400">Token di jaringan: <strong id="chain">{{CHAIN}}</strong></p>
+        <h1 class="text-xl font-semibold">SOBER <span class="text-sm text-green-400">(SOB)</span></h1>
+        <p class="text-xs text-gray-400">Token di jaringan: <strong id="chain">BSC</strong></p>
       </div>
     </div>
     <nav class="flex items-center gap-3">
@@ -57,11 +57,11 @@
   </div>
   <div class="p-4 rounded-lg glass">
     <p class="text-xs text-gray-400">Total Supply</p>
-    <p class="mt-1">{{TOTAL_SUPPLY}}</p>
+    <p class="mt-1">1.000.000.000</p>
   </div>
   <div class="p-4 rounded-lg glass">
     <p class="text-xs text-gray-400">Decimals</p>
-    <p class="mt-1">{{DECIMALS}}</p>
+    <p class="mt-1">18</p>
   </div>
   <div class="p-4 rounded-lg glass">
     <p class="text-xs text-gray-400">Liquidity</p>
@@ -139,8 +139,8 @@
     // Add to MetaMask
     document.getElementById('addToMeta').addEventListener('click', async function(){
       const tokenAddress = document.getElementById('contract').innerText.trim();
-      const tokenSymbol = '{{SYMBOL}}';
-      const tokenDecimals = Number('{{DECIMALS}}') || 18;
+      const tokenSymbol = 'SOB';
+      const tokenDecimals = Number('18') || 18;
       try {
         if (window.ethereum) {
           const wasAdded = await window.ethereum.request({
